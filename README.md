@@ -1,31 +1,23 @@
-# AMP Skeleton Compatability
+# AMP Breadcrumb Schema fix.
 
-The skeleton plugin to add AMP compatibility to your theme.
+AMP Compatibility plugin to create a valid Structured data for breadcrumb schema.
 
 ## Notes
 
-- Rename plugin's folder to amp-skeleton-compat when you use this skeleton.
-- Replace Namespace AMP_Plugin_Name_Compat by your namespace in every file. 
-- Change Plugin Name
-- Add your name as author
-- Add your plugin URI
+- Install and Activate
+- Still seeing issues contact us on WordPress Support forum
 
 ## Plugin Structure
 
 ```markdown
 .
-├── css
-│   ├── amp-style.css
 ├── sanitizers
 │   ├── class-sanitizer.php
-└── amp-skeleton-compat.php
+└── amp-breadcrumb-schema-fix.php
 ```
 ## Sanitizers
 
-The plugin uses `amp_content_sanitizers` filter to add custom sanitizers, we have added a two examples which add simple toggle for menu and search using amp-state and amp-bind.
-
-## Custom CSS
-You can add your custom CSS or override the CSS in in `css/amp-style.css` make sure you don't exceed overall budget of 75KB
+The plugin uses `amp_content_sanitizers` filter to add custom sanitizers, to remove `rel="amphtml"` attribute from links with attribute `type="webPage"`
 
 ### Need a feature in plugin?
-Feel free to create a issue and will add more examples.
+Feel free contact AMP WordPress Support.
